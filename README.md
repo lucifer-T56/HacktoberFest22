@@ -42,10 +42,10 @@ This repository is for everyone who wants to participate in Hacktoberfest 2022.
 <h6></h6>
 <h6></h6>
 <h6></h6>
-<h1>Contributors :: </h1>
-<br>
 
-</a>
+
+
+
 <h6>Thanks for contributing. It's an amazing experience to collaborate with you all!</h6>
 <br>
 <img src = "https://github.com/lucifer-T56/LGMVIP-WEBDEV/blob/main/Images/code.avif" >
