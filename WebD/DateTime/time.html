@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        align-items: center;
+        display: flex;
+        align-content: center;
+        float: inline-end;
+        border-radius: 20px;
+      }
+      button {
+        background-color: rgb(165, 8, 8);
+        height: 30px;
+        width: 100px;
+        border-radius: 20px;
+        color: wheat;
+      }
+      button:hover {
+        background-color: rgb(204, 121, 121);
+        color: black;
+      }
+      .cla {
+        border-color: black;
+        border-style: dotted;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <h1><p >Rangan's Home</p></h1>
+    </header>
+    <div><h1><b><i><u>press here to get data</u></i></b></h1></div>
+    <button onclick="myfun()">press here</button>
+    <p id="date">today</p>
+    <p id="time">todays time</p>
+    <p id="live">Rangan</p>
+    <button class="cla">todays date</p>
+    <p class="cla">todays date</p>
+    <p class="cla">todays date</p>
+
+    <script>
+      function myfun() {
+        var d = new Date().toLocaleDateString();
+        document.getElementById("date").innerHTML = "todays date <br>" + d;
+        var c = new Date().toLocaleDateString();
+        document.getElementsByClassName("cla").innerHTML =
+          "todays date <br>" + c;
+        var t = new Date().toLocaleTimeString();
+        document.getElementById("time").innerHTML = "todays time <br>" + t;
+      }
+      (function () {
+        setInterval(() => {
+          var d = new Date().toLocaleTimeString();
+          document.getElementById("live").innerHTML = d;
+        }, 1000);
+      })();
+    </script>
+  </body>
+</html>
