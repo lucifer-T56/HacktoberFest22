@@ -1,0 +1,15 @@
+{
+	"manifest_version":2,
+	"name": "20-20-20",
+	"version" : "1.0.0",
+	"author" : "Manujaya Sri",
+	"permissions":["alarms","notifications"],
+	"background": {
+    	"scripts": ["background.js"],
+        "persistent": false
+ },
+	"browser_action": {
+    "default_popup": "popup.html"
+  }
+	
+}
