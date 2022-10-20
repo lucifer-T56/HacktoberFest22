@@ -6,7 +6,7 @@ This repository is for everyone who wants to participate in Hacktoberfest 2022.
 <img src = "https://github.com/lucifer-T56/LGMVIP-WEBDEV/blob/main/Images/download.jfif" alt= "Its time to contribute!!" height = "100%" width = "100%">
 <h1>🎖️🎖️Rewards ::🎖️🎖️</h1>
 <h6>You can get awesome goodies like T-Shirt and some stickers for FREE!!!🤩🤩</h6>
-<h1>👨‍💻👩‍💻Upload your Projects or DSA related Programs in any Language👨‍💻👩‍💻</h1>
+<h1>👨‍💻👩‍💻Upload your Projects  in any Language👨‍💻👩‍💻</h1>
 <h6>Use this project to make your first contribution to an open source project on GitHub!!</h6>
 <br>
 <h1>What is Hacktoberfest?</h1>
