@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(135deg, #C33764, #1D2671);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+}
+
+.box{
+    background: rgba(245, 245, 245, 0.671);
+    box-shadow: 5px 5px 5px rgb(39, 36, 41);
+    min-height: 50vh;
+    min-width: 40vw;
+    padding: 30px;
+    border-radius: 7px;
+    color: black;
+}
+
+.box h2{
+    text-align: center;
+    font-size: 43px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+#len{
+    padding-left: 10px;
+}
+
+.passHeader{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: 550;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#copy{
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0,50%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.passHeader:hover #copy{
+    opacity: 1;
+    transform: translate(0, -100%);
+}
+
+.form{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 23px;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 0;
+}
+
+input{
+    height: 35px;
+    width: 90px;
+    border: 2px solid white;
+    font-size: 22px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#len{
+    transform: translateX(103.7px);
+    width: 120px;
+}
+
+.generate{
+    display: block;
+    background-color: #caa733;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 20px;    
+}
+
+.generate:hover {
+    background-color: #e6b927;
+}
