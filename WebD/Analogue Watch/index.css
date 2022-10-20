@@ -1,0 +1,38 @@
+#clockContainer{
+    position: relative;
+    margin: auto;
+    border: 2px solid red;
+    height: 60vw;
+    width: 60vw;
+    background-color: #ffefb9;
+    background-image: url("1200px-Horloĝo_001.svg.png");
+    background-size: 100%;
+}
+#hour,#minute,#second{
+    position: absolute;
+    background-color: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+#hour{
+    top: 24%;
+    height: 26%;
+    width: 1%;
+    left: 49.5%;
+    /* display: none; */
+
+}
+#minute{
+    top: 18%;
+    height: 32%;
+    width: 1%;
+    left: 49.5%;
+    /* display: none; */
+}
+#second{
+    top: 24%;
+    height: 26%;
+    width: 1%;
+    left: 49.5%;
+    /* display: none; */
+}
