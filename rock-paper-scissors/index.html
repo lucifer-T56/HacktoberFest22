@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROCK | PAPER | SCISSORS</title>
+    <style>
+      /* Gobal declarations */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        font-family: sans-serif;
+        background-color: #06283d;
+        color: #dff6ff;
+      }
+      main {
+        width: 100%;
+
+        display: grid;
+        place-content: center;
+      }
+      div.con {
+        display: flex;
+        background-color: #256d85;
+        text-align: center;
+        padding: 1rem max(2vw, 1rem);
+
+        justify-content: space-around;
+        gap: 3rem;
+        flex-wrap: wrap;
+      }
+      p {
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin-block: 1rem;
+      }
+      .options {
+        display: flex;
+        gap: 2rem;
+        margin: min(6vw, 4rem);
+        flex-direction: column;
+      }
+      button {
+        font-size: 1.3rem;
+        border: none;
+        border-radius: 10%;
+        padding: 1.5rem;
+        background-color: #dff6ff;
+        color: #06283d;
+        font-weight: 600;
+        transition: 0.1s;
+        box-shadow: 5px 5px 1px #06283d;
+      }
+      button:hover,
+      button:active {
+        background-color: #aec6d0d5;
+        opacity: 0.8;
+      }
+      button#again {
+        max-width: 200px;
+        border-radius: 10px;
+        padding: 1.1rem;
+        margin: 3rem auto 0;
+        background-color: #405cf5;
+        color: #dff6ff;
+        order: 2;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      h3 {
+        text-align: center;
+        justify-self: center;
+        margin: 2rem;
+        font-size: 2.4rem;
+      }
+      p#result {
+        text-align: center;
+        position: relative;
+        order: 1;
+        font-size: 2.2rem;
+        color: #28d058;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h3>Rock , Paper ,Scissors Game</h3>
+      <div class="con">
+        <div class="con-ply">
+          <p>YOU</p>
+          <div class="options" id="option">
+            <button id="rock" name="Rock">Rock</button>
+            <button id="paper" name="Paper">Paper</button>
+            <button id="scissors" name="Scissors">Scissors</button>
+          </div>
+        </div>
+        <div class="con-ply">
+          <p>COMPUTER</p>
+          <div class="com-div options"></div>
+        </div>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
