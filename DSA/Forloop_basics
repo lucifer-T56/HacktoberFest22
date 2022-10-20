@@ -1,0 +1,11 @@
+let array1 = ['a','b','c']
+let array2 = ['c','c','d','e'];
+let array3 = [];
+for(let i=0;i<array1.length;i++){
+  if(array3.indexOf(array1[i]) == -1)
+     array3.push(array1[i])
+}
+for(let i=0;i<array2.length;i++){
+  if(array3.indexOf(array2[i]) == -1)
+     array3.push(array2[i])
+}
