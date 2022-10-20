@@ -1,0 +1,36 @@
+<html>
+  <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Change Background
+    </title>
+    <style>
+     
+    </style>
+  </head>
+  <body id="background">
+    <button class="toggle" onclick="change()">blue</button>
+    <button class="toggle" onclick="reset()">pink</button>
+  </body>
+  <script>
+    function change(){
+      localStorage.clear();
+      localStorage.setItem("background","lightblue");
+      document.getElementById("background").style.backgroundColor=localStorage.getItem("background");
+    }
+    function reset(){
+      localStorage.clear();
+      localStorage.setItem("background","lightpink");
+      document.getElementById("background").style.backgroundColor=localStorage.getItem("background");
+    }
+    if(localStorage.getItem("background")==="lightblue"){
+      document.getElementById("background").style.backgroundColor=localStorage.getItem("background");
+    }
+    else if(localStorage.getItem("background")==="lightpink"){
+      document.getElementById("background").style.backgroundColor=localStorage.getItem("background");
+    }
+    else{
+      document.getElementById("background").style.backgroundColor="lightgreen";
+    }
+  </script>
+</html>
