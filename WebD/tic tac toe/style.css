@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgb(184, 37, 37);
+    color: white;
+    height: 80px;
+    font-size: 30px;
+    font-family: "Rubik Beastly";
+    display: flex;
+    align-items: center;
+    padding: 0px 12px;
+}
+nav ul{
+    list-style-type: none;
+}
+.gameContainer{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,20vh);
+    font-family: cursive;
+    font-size: 130%;
+    margin-left: 13vw;
+}
+.box{
+    display: flex;
+    border: 3px solid black;
+    font-size: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(248, 223, 223);
+    cursor: pointer;
+}
+.gameinfo{
+    padding: 0px, 34px;
+    font-family: fantasy;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    margin: 3px 30px 48px 8px;
+    padding: 10px;
+    background-color: rgb(255, 146, 146);
+    border: 3px solid black;
+    border-radius: 10px;
+}
+#reset:hover{
+    cursor: pointer;
+}
+@media screen and (max-width: 850px)
+{
+    .gameContainer{
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 30vw;
+        /* justify-content: center; */
+
+    }    
+}
