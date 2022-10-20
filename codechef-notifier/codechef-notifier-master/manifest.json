@@ -1,0 +1,43 @@
+{
+    "name": "Codechef notify",
+    "version": "1.0",
+    "description": "Build an Extension!",
+    "manifest_version": 2,
+    "permissions": ["storage","notifications","https://www.codechef.com/get_submission_status/*","http://www.codechef.com/get_submission_status/*","https://www.codechef.com/error_status_table/*","https://www.codechef.com/error_status_table/*"],
+    "content_scripts": [
+                          {
+                            "matches": ["https://www.codechef.com/submit/complete/*"],
+                            "js": ["contentScript.js"],
+                            "all-frames": true
+                          }
+                      ],
+    "background": { 
+                     "scripts": ["jquery.js","background.js"],
+                     "persistent" : true
+                  },
+
+    "browser_action":{
+                    "default_popup": "popup.html",
+                    "default_icon": {
+                        "16": "images/wrong_16.png",
+                        "48": "images/wrong_48.png",
+                        "128": "images/wrong_128.png"
+                      }
+                  },
+
+      "icons": {
+                  "16": "images/correct_chef_16.png",
+                  "48": "images/correct_chef_48.png",
+                  "128": "images/correct_chef_128.png"
+                },
+
+      "commands": {
+                    "clean-all": {
+                                    "suggested_key": {
+                                                        "default": "Alt+Shift+Delete",
+                                                        "mac": "Alt+Shift+Delete"
+                                                      },
+                                    "description": "clean all the submission results"
+                                 }
+                  }
+  }
