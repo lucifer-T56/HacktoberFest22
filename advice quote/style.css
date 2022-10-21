@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap");
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Manrope;
+  font-size: 1rem;
+}
+
+main {
+  background-color: hsl(217, 19%, 24%);
+  width: 100%;
+  max-width: 340px;
+  text-align: center;
+  border-radius: 15px;
+  padding: 1em;
+}
+h4 {
+  color: hsl(150, 100%, 66%);
+  padding: 10px;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  margin: 9px auto;
+}
+blockquote {
+  color: hsl(193, 38%, 86%);
+  font-size: 1.5rem;
+  margin: 5px;
+  padding: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.divider {
+  padding: 1em;
+  background-image: url("./pattern-divider-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dice {
+  width: 80px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  bottom: -3rem;
+}
+.dice:active,
+.dice:hover {
+  box-shadow: 0 0 80px 20px hsl(150, 100%, 62%);
+  opacity: 1;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 60rem) {
+  main {
+    max-width: 420px;
+  }
+  .divider {
+    background-image: url("./pattern-divider-desktop.svg");
+  }
+}
