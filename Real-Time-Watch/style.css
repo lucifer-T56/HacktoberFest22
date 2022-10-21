@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Sacramento&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: salmon;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+img{
+    width: 70px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 60px;
+}
+
+.clock{
+    position: relative;
+    background-color: rgb(175, 247, 252);
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 5px solid darkgray;
+    box-shadow: 1px 1px 4px ;
+
+}
+
+.numbers div{
+    position: absolute;
+    
+    font-size:27px ;
+    font-weight: bold;
+    color: rgb(241, 217, 169);
+    text-shadow: 1px 1px 2px rgb(70, 68, 68);
+    
+}
+
+.twelve{
+    top: 6px ;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.three{
+    right: 6px ;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nine{
+    left: 6px;
+    bottom: 50%;
+    transform: translateY(50%);
+    
+}
+
+.six{
+    left:50%;
+    bottom: 6px;
+    transform:translate(-50%);
+}
+
+.arrows{
+    display: flex;
+    width: 100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrows::before{
+
+    content: "" ;
+    width: 25px;
+    height: 25px;
+    background-color: green;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px rgb(126, 123, 123);
+    z-index: 4;
+}
+
+.arrows div{
+    background-color: rgb(255, 255, 255);
+    width: 7px;
+    position: absolute;
+    height: 120px;
+    transform-origin: bottom center;
+    bottom: 50%;
+    border-radius: 50% 50% 0 0 ;
+    z-index: 3;
+    box-shadow: 1px 1px 2px rgb(126, 123, 120);
+}
+
+.arrows .hour{
+    height: 80px;
+    transform: rotate(30deg);
+}
+
+.arrows .second{
+    background-color: rgb(241, 214, 146);
+    transform: rotate(250deg);
+}
+
+h1
+{   color:salmon;
+    position: absolute;
+    left: 50%;
+    top: 17px;
+    font-weight: bolder;
+    font-size: 10vw;
+    transform: translateX(-50%);
+    font-family: 'Poppins',sans-serif;
+    -webkit-text-stroke: 0.3vw rgb(204, 194, 194);
+    text-transform: uppercase;
+
+
+
+}
+
+
+h1::before{
+    content: attr(data-text);
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: rgb(209, 235, 235);
+    border-radius: 20px;
+    -webkit-text-stroke: 0vw salmon;
+    border-right: 5px solid rgb(171, 255, 196);
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate{
+    0% ,10%, 100%{
+        width: 0;
+    }
+    70% , 90%{
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    h1{
+        font-size: 7vw;
+        top: 6px;
+        top: -15px;
+        transform: translateX(-50%);
+    }
+  }
